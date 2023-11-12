@@ -1,22 +1,22 @@
-const myBtn = document.getElementById('scroll-btn');
+const myBtn = document.querySelector('.scroll-btn');
 
 window.onscroll = function() {
-  scrollF();
+    scrollF();
 };
 
 function scrollF() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    myBtn.style.display = "block";
-  } else {
-    myBtn.style.display = "none";
-  }
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        myBtn.style.display = "block";
+    } else {
+        myBtn.style.display = "none";
+    }
 }
 
 myBtn.addEventListener('click', function() {
-  scrollToTop();
+    scrollToTop();
 });
 
 function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
