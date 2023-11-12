@@ -1,0 +1,17 @@
+body, html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      
+      
+}
+
+#scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    display: none; /* Початково ховаємо кнопку */
+}
