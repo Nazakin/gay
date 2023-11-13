@@ -14,7 +14,7 @@ console.log(data)
       category.books.forEach(book => {
         const bookItem = document.createElement('li');
         bookItem.className = 'bs-book-item';
-
+//bookInfo теж потрібен для модалки
         const bookInfo = {
           title: book.title,
           author: book.author,
@@ -42,6 +42,7 @@ console.log(data)
   })
   .catch(error => console.error('Error fetching data:', error));
 
+  //скрипт модалки нижче
 function openModal(bookInfo) {
   const modal = document.getElementById('myModal');
   const modalImage = document.getElementById('modalImage');
